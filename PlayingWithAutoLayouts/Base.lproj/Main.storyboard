@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayingWithAutoLayouts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M4D-Cz-GhN">
+                                <rect key="frame" x="8" y="416" width="144" height="144"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="6PR-es-Gz1"/>
+                                    <constraint firstAttribute="width" constant="144" id="q2y-tn-gfR"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lCt-DF-kQL">
+                                <rect key="frame" x="168" y="416" width="144" height="144"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="T5u-9h-yrV"/>
+                                    <constraint firstAttribute="width" constant="144" id="fgD-zm-hLW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wWp-ki-QS9">
+                                <rect key="frame" x="8" y="8" width="305" height="144"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="01L-9y-uYi">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="550"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="750"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="144" id="uJF-mO-eRw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wWp-ki-QS9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2db-R3-XwB"/>
+                            <constraint firstItem="wWp-ki-QS9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="371-hK-biU"/>
+                            <constraint firstAttribute="trailing" secondItem="lCt-DF-kQL" secondAttribute="trailing" constant="8" id="AXM-8A-Qr0"/>
+                            <constraint firstItem="M4D-Cz-GhN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="NQh-oB-250"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lCt-DF-kQL" secondAttribute="bottom" constant="8" id="Qem-uv-5g0"/>
+                            <constraint firstItem="wWp-ki-QS9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="8" id="lQN-qA-bbK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M4D-Cz-GhN" secondAttribute="bottom" constant="8" id="sgL-uI-sHE"/>
+                            <constraint firstAttribute="trailing" secondItem="wWp-ki-QS9" secondAttribute="trailing" constant="7" id="vZ5-tY-OR8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="117.25352112676056"/>
+        </scene>
+    </scenes>
+</document>
